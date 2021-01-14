@@ -61,7 +61,7 @@ def hangman(secret_word):
     while (remaining_lives > 0):
         available_letters = get_available_letters(letters_guessed)
         print "Available letters:   " + available_letters
-        guess = raw_input("\n Please guess a letter:   ")
+        guess = input("\n Please guess a letter:   ")
         letter = guess.lower()
         if (not ifValid(letter)):
 	    	print "\n invalid input"
